@@ -24,8 +24,8 @@ layout: default
 </div>
 
 <script type="text/javascript">
-  window.addEventListener("resize", function(e) {
-  var iframe = document.getElementById("cv_iframe");
+  function resizeIframe(e) {
+    var iframe = document.getElementById("cv_iframe");
     console.log("DEBUG");
     console.log(iframe.style.width);
     console.log(iframe.clientWidth);
@@ -36,6 +36,8 @@ layout: default
     iframe.style.height = 10000 + "px";
     console.log(10000 + "px");
   });
+  window.addEventListener("resize", resizeIframe);
+  window.addEventListener("load", resizeIframe);
 </script>  
 
 <div id="cv" onresize="resizeIframe(this)">
