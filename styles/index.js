@@ -109,7 +109,6 @@ var show_contact=function(){
 function resizeIframe(e) {
         var iframe = document.getElementById("cv_iframe");
 	var w = iframe.offsetWidth;
-	console.log(w);
 	if (w == 0) {
 	    return false;
 	}
