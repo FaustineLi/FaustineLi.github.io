@@ -31,19 +31,19 @@ var show_posts=function(){
 
 var show_cv=function(){
 
-	var last;
-	function() {
+	var last=function(){
 		if($('#cv').is(':visible')) {
-			last = '#cv'
+			return '#cv'
 		} else if ($('#about').is(':visible')) {
-			last = '#about'
+			return '#about'
 		} else if ($('#contact').is(':visible')) {
-			last = '#contact'
+			return '#contact'
 		}
 	}
 
-	$(last).removeClass('disabled');
-	$(last).fadeOut(300, function(){$('#cv').fadeIn(300)});
+
+	$(last()).removeClass('disabled');
+	$(last()).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
 };
 
