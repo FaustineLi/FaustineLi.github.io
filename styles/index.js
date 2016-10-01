@@ -6,7 +6,7 @@ var myVariable=$('.item').click(function(){
 	} else if ($('#contact').is(':visible')) {
 		myVariable = '#contact'
 	}
-}
+})
 var hide_lists=function(cb){
 	$('#posts').fadeOut(300);
 	$('#projects').fadeOut(300);
