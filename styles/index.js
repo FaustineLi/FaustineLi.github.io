@@ -10,8 +10,9 @@ var hide_lists=function(cb){
 			return {div: "#posts", btn: "#posts-btn"}
 		}
 	}
-	$(last().div).removeClass('disabled');
-	$(last().btn).fadeOut(300);
+	var data = last()
+	$(data.btn).removeClass('disabled');
+	$(data.div).fadeOut(300);
 };
 
 var show_projects=function(){
@@ -26,8 +27,9 @@ var show_projects=function(){
 			return {div: "#posts", btn: "#posts-btn"}
 		}
 	}
-	$(last().div).removeClass('disabled');
-	$(last().btn).fadeOut(300, function(){$('#projects').fadeIn(300)});
+	var data = last()
+	$(last().btn).removeClass('disabled');
+	$(last().div).fadeOut(300, function(){$('#projects').fadeIn(300)});
 	$('#projects-btn').addClass('disabled')
 };
 
@@ -43,8 +45,9 @@ var show_posts=function(){
 			return {div: "#posts", btn: "#posts-btn"}
 		}
 	}
-	$(last().div).removeClass('disabled');
-	$(last().btn).fadeOut(300, function(){$('#posts').fadeIn(300)});
+	var data = last()
+	$(last().btn).removeClass('disabled');
+	$(last().div).fadeOut(300, function(){$('#posts').fadeIn(300)});
 	$('#posts-btn').addClass('disabled')
 };
 
@@ -60,8 +63,9 @@ var show_cv=function(){
 			return {div: "#posts", btn: "#posts-btn"}
 		}
 	}
-	$(last().div).removeClass('disabled');
-	$(last().btn).fadeOut(300, function(){$('#cv').fadeIn(300)});
+	var data = last()
+	$(last().btn).removeClass('disabled');
+	$(last().div).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
 };
 
@@ -77,8 +81,9 @@ var show_about=function(){
 			return {div: "#posts", btn: "#posts-btn"}
 		}
 	}
-	$(last().div).removeClass('disabled');
-	$(last().btn).fadeOut(300, function(){$('#about').fadeIn(300)});
+	var data = last()
+	$(last().btn).removeClass('disabled');
+	$(last().div).fadeOut(300, function(){$('#about').fadeIn(300)});
 	$('#about-btn').addClass('disabled')
 };
 
