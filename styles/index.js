@@ -94,8 +94,8 @@ var show_contact=function(){
 			return {div: "#posts", btn: "#posts-btn"}
 		}
 	}
-	var value = last()
-	$(value.div).removeClass('disabled');
-	$(value.btn).fadeOut(300, function(){$('#contact').fadeIn(300)});
+	var data = last()
+	$(data.btn).removeClass('disabled');
+	$(data.div).fadeOut(300, function(){$('#contact').fadeIn(300)});
 	$('#contact-btn').addClass('disabled')
 };
