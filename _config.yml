@@ -1,6 +1,6 @@
 title: 'Faustine Li'
 description: 'An aspiring MS student of Statistical Science at Duke University'
-about: 'Hello World'
+about: 
 location: 'Durham, NC'
 email: faustineli12@gmail.com
 baseurl: ""
@@ -19,7 +19,7 @@ projects_btn: "Projects"
 cv_btn: 'CV'
 about_btn: 'About'
 posts_btn: "Posts"
-imprint_btn: "Imprint"
+imprint_btn: "About"
 name_badge: "an article by"
 rss_badge: "Subscribe feed!"
 
