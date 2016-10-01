@@ -67,6 +67,7 @@ var show_cv=function(){
 	$(last().btn).removeClass('disabled');
 	$(last().div).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
+	resizeIframe();
 };
 
 var show_about=function(){
@@ -107,6 +108,10 @@ var show_contact=function(){
 
 function resizeIframe(e) {
         var iframe = document.getElementById("cv_iframe");
-        iframe.style.height = 11 / 8.5 * (iframe.offsetWidth - 24) + 24 + "px";
+	var w = iframe.offsetWidth;
+	console.log(w);
+        iframe.style.height = 11 / 8.5 * (w - 24) + 24 + "px";
 };
+
+window.addEventListener("resize", resizeIframe);
 
