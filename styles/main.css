@@ -254,7 +254,7 @@ img{
 
 #cv {
   display: none;
-  height:1000px;
+  height:auto;
   width:auto;
   max-width: 800px;
   margin-left: auto;
