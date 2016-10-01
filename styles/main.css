@@ -254,15 +254,15 @@ img{
 
 #cv {
   display: none;
-  height: 1100px;
-  width: 800px;
+  max-height: 1100px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #about {
   display: none;
-  width: 500px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
