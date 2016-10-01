@@ -4,7 +4,7 @@ layout: default
 <script src="{{ "/styles/index.js" | prepend: site.baseurl }}"></script>
 <div>
   <a id="about-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_about();">{{ site.about_btn }}</a>
-  <a id="cv-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_cv();">{{ site.cv_btn }}</a>
+  <a id="cv-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_cv(); resizeIframe();">{{ site.cv_btn }}</a>
   <!-- 
   Hide projects and posts
   <a id="projects-btn" class="waves-effect waves-teal btn-flat btn-large" onclick="show_projects();">{{ site.projects_btn }}</a>
@@ -40,12 +40,12 @@ layout: default
   window.addEventListener("load", resizeIframe);
 </script>  
 
-<div id="cv" onresize="resizeIframe(this)">
+<div id="cv">
   <h2 class="my-mini-heading">Faustine's Resume</h2>
   <p class='my-item'>
     <a href="//github.com/FaustineLi/FaustineLi.github.io/blob/master/_data/resume.pdf?raw=true" class="my-link">Click here to download</a>
   </p>
-  <iframe id="cv_iframe" src="//docs.google.com/gview?url=https://github.com/FaustineLi/FaustineLi.github.io/blob/master/_data/resume.pdf?raw=true&embedded=true" style="width:100%; height:100px; border:0" onresize="resizeIframe(this)"></iframe>
+  <iframe id="cv_iframe" src="//docs.google.com/gview?url=https://github.com/FaustineLi/FaustineLi.github.io/blob/master/_data/resume.pdf?raw=true&embedded=true" style="width:100%; height:100px; border:0" ="resizeIframe(this)"></iframe>
 </div>
 
 <div id="contact">
