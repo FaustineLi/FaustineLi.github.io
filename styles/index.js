@@ -27,12 +27,18 @@ var show_cv=function(){
 
 var show_about=function(){
 	$('#projects-btn').removeClass('disabled');
+	$('#projects-btn').removeClass('disabled');
+	$('#cv-btn').removeClass('disabled');
+	$('#contact-btn').removeClass('disabled');
 	$('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
 	$('#about-btn').addClass('disabled')
 };
 
 var show_contact=function(){
 	$('#projects-btn').removeClass('disabled');
+	$('#projects-btn').removeClass('disabled');
+	$('#about-btn').removeClass('disabled');
+	$('#cv-btn').removeClass('disabled');
 	$('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
 	$('#contact-btn').addClass('disabled')
 };
