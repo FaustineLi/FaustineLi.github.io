@@ -119,7 +119,7 @@ function resizeIframe(e) {
 
 function try_until_sucess(func, delay) {
         if (!func()) {
-	    setTimeout(try_until_sucess(func, delay), delay);
+	    setTimeout(function(){try_until_sucess(func, delay);}, delay);
 	}
 }
 
