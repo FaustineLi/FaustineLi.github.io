@@ -255,5 +255,7 @@ img{
 #cv {
   height: 800px;
   width: 800px;
-  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
