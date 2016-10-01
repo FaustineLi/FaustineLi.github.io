@@ -1,7 +1,7 @@
 var hide_lists=function(cb){
 	var last=function(){
 		if($('#cv').is(':visible')) {
-			return {div: "#cv", btn: "cv-btn"}
+			return {div: "#cv", btn: "#cv-btn"}
 		} else if ($('#about').is(':visible')) {
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
@@ -18,7 +18,7 @@ var hide_lists=function(cb){
 var show_projects=function(){
 	var last=function(){
 		if($('#cv').is(':visible')) {
-			return {div: "#cv", btn: "cv-btn"}
+			return {div: "#cv", btn: "#cv-btn"}
 		} else if ($('#about').is(':visible')) {
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
@@ -36,7 +36,7 @@ var show_projects=function(){
 var show_posts=function(){
 	var last=function(){
 		if($('#cv').is(':visible')) {
-			return {div: "#cv", btn: "cv-btn"}
+			return {div: "#cv", btn: "#cv-btn"}
 		} else if ($('#about').is(':visible')) {
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
@@ -54,7 +54,7 @@ var show_posts=function(){
 var show_cv=function(){
 	var last=function(){
 		if($('#cv').is(':visible')) {
-			return {div: "#cv", btn: "cv-btn"}
+			return {div: "#cv", btn: "#cv-btn"}
 		} else if ($('#about').is(':visible')) {
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
@@ -72,7 +72,7 @@ var show_cv=function(){
 var show_about=function(){
 	var last=function(){
 		if($('#cv').is(':visible')) {
-			return {div: "#cv", btn: "cv-btn"}
+			return {div: "#cv", btn: "#cv-btn"}
 		} else if ($('#about').is(':visible')) {
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
@@ -90,7 +90,7 @@ var show_about=function(){
 var show_contact=function(){
 	var last=function(){
 		if($('#cv').is(':visible')) {
-			return {div: "#cv", btn: "cv-btn"}
+			return {div: "#cv", btn: "#cv-btn"}
 		} else if ($('#about').is(':visible')) {
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
