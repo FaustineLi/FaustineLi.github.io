@@ -104,3 +104,9 @@ var show_contact=function(){
 	$(data.div).fadeOut(300, function(){$('#contact').fadeIn(300)});
 	$('#contact-btn').addClass('disabled')
 };
+
+function resizeIframe(e) {
+        var iframe = document.getElementById("cv_iframe");
+        iframe.style.height = 11 / 8.5 * (iframe.offsetWidth - 24) + 24 + "px";
+};
+
