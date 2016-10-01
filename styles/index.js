@@ -10,6 +10,7 @@ var show_posts=function(){$('#projects-btn').removeClass('disabled');
 $('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
 $('#posts-btn').addClass('disabled')};
 
-var show_page=function(){$('#projects-btn').removeClass('disabled');
+var show_cv=function(){$('#projects-btn').removeClass('disabled');
 $('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
-$('#posts-btn').addClass('disabled')};
+$('#cv-btn').addClass('disabled')
+};
