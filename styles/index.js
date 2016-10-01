@@ -1,5 +1,12 @@
-var myVariable='#cv'
-
+var myVariable=$('.item').click(function(){
+	if($('#cv').is(':visible')) {
+		myVariable = '#cv'
+	} else if ($('#about').is(':visible')) {
+		myVariable = '#about'
+	} else if ($('#contact').is(':visible')) {
+		myVariable = '#contact'
+	}
+}
 var hide_lists=function(cb){
 	$('#posts').fadeOut(300);
 	$('#projects').fadeOut(300);
@@ -32,12 +39,8 @@ var show_posts=function(){
 };
 
 var show_cv=function(){
-	$('#projects-btn').removeClass('disabled');
-	$('#about-btn').removeClass('disabled');
-	$('#contact-btn').removeClass('disabled');
-	$('#about').fadeOut(300, function(myVariable){$(this).fadeIn(300)});
-	$('#contact').fadeOut(300, function(myVariable){$(this).fadeIn(300)});
-	$('#projects').fadeOut(300, function(myVariable){$(this).fadeIn(300)});
+	$(myVariable).removeClass('disabled');
+	$(myVariable).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
 };
 
