@@ -30,6 +30,7 @@ layout: default
     console.log(iframe.clientWidth);
     console.log(iframe.offsetWidth);
     iframe.style.height = 11 / 8.5 * iframe.offsetWidth + "px";
+    iframe.style.height = 11 / 8.5 * (iframe.offsetWidth - 24) + 24 + "px";
     console.log(10000 + "px");
   };
   window.addEventListener("resize", resizeIframe);
