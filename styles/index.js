@@ -22,6 +22,7 @@ var show_cv=function(){
 	$('#about-btn').removeClass('disabled');
 	$('#contact-btn').removeClass('disabled');
 	$('#projects').fadeOut(300);
+	$('#cv').fadeIn(300);
 	$('#cv-btn').addClass('disabled')
 };
 
@@ -30,6 +31,7 @@ var show_about=function(){
 	$('#cv-btn').removeClass('disabled');
 	$('#contact-btn').removeClass('disabled');
 	$('#projects').fadeOut(300);
+	$('#about').fadeIn(300);
 	$('#about-btn').addClass('disabled')
 };
 
@@ -38,5 +40,6 @@ var show_contact=function(){
 	$('#about-btn').removeClass('disabled');
 	$('#cv-btn').removeClass('disabled');
 	$('#projects').fadeOut(300);
+	$('#contact').fadeIn(300);
 	$('#contact-btn').addClass('disabled')
 };
