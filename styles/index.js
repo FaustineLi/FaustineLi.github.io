@@ -16,3 +16,21 @@ var show_posts=function(){
 	$('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
 	$('#posts-btn').addClass('disabled')
 };
+
+var show_cv=function(){
+	$('#projects-btn').removeClass('disabled');
+	$('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
+	$('#cv-btn').addClass('disabled')
+};
+
+var show_about=function(){
+	$('#projects-btn').removeClass('disabled');
+	$('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
+	$('#about-btn').addClass('disabled')
+};
+
+var show_contact=function(){
+	$('#projects-btn').removeClass('disabled');
+	$('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
+	$('#contact-btn').addClass('disabled')
+};
