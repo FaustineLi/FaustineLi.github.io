@@ -1,4 +1,5 @@
-var myVariable=$('.item').click(function(){
+var myVariable;
+$('.item').click(function(){
 	if($('#cv').is(':visible')) {
 		myVariable = '#cv'
 	} else if ($('#about').is(':visible')) {
@@ -7,6 +8,7 @@ var myVariable=$('.item').click(function(){
 		myVariable = '#contact'
 	}
 })
+
 var hide_lists=function(cb){
 	$('#posts').fadeOut(300);
 	$('#projects').fadeOut(300);
