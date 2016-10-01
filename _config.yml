@@ -21,6 +21,7 @@ cv_btn: 'CV'
 about_btn: 'About'
 posts_btn: "Posts"
 imprint_btn: "About"
+contact_btn: 'Contact'
 name_badge: "an article by"
 rss_badge: "Subscribe feed!"
 
