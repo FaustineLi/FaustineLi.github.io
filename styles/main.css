@@ -245,7 +245,7 @@ a{
     font-size: 13px;
     color: #4db6ac;
 }
-#projects, #posts{
+#projects, #posts, #cv, #about, #contact{
     display: none;
 }
 img{
