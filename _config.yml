@@ -1,10 +1,10 @@
 title: 'Faustine Li'
-description: 'Hello'
-about: 'Potatoes'
+description: 'An aspiring MS student of Statistical Science at Duke University'
+about: 'Hello World'
 location: 'Durham, NC'
 email: faustineli12@gmail.com
 baseurl: ""
-url: 'faustineli.github.io'
+url: 
 twitter_username: 
 github_username:  FaustineLi
 
@@ -16,6 +16,8 @@ isolang: en
 close_btn: "Close"
 home_btn: "Home"
 projects_btn: "Projects"
+cv_btn: 'CV'
+about_btn: 'About'
 posts_btn: "Posts"
 imprint_btn: "Imprint"
 name_badge: "an article by"
