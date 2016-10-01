@@ -251,3 +251,8 @@ a{
 img{
     max-width: 100%;
 }
+
+#cv {
+  height: 800px;
+  width: 800px;
+}
