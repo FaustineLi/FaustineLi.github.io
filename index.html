@@ -29,7 +29,7 @@ layout: default
     console.log("DEBUG");
     console.log(iframe.clientWidth);
     console.log(iframe.offsetWidth);
-    iframe.style.height = iframe.offsetWidth;
+    iframe.style.height = iframe.offsetWidth + "px";
     console.log(10000 + "px");
   };
   window.addEventListener("resize", resizeIframe);
