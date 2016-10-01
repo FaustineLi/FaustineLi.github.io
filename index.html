@@ -27,13 +27,9 @@ layout: default
   function resizeIframe(e) {
     var iframe = document.getElementById("cv_iframe");
     console.log("DEBUG");
-    console.log(iframe.style.width);
     console.log(iframe.clientWidth);
-    console.log(iframe.parentNode);
-    console.log(iframe.parentNode.nodeName);
-    console.log(iframe.parentNode.style.width);
     console.log(iframe.offsetWidth);
-    iframe.style.height = 10000 + "px";
+    iframe.style.height = iframe.offsetWidth;
     console.log(10000 + "px");
   };
   window.addEventListener("resize", resizeIframe);
