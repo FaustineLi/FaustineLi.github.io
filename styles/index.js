@@ -118,7 +118,9 @@ function resizeIframe(e) {
 };
 
 function try_until_sucess(func, delay) {
-        if (!func()) {
+        var ret = func();
+	console.log(ret);
+        if (!ret) {
 	    setInterval(func, delay);
 	}
 }
