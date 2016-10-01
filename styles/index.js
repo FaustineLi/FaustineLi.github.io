@@ -110,7 +110,11 @@ function resizeIframe(e) {
         var iframe = document.getElementById("cv_iframe");
 	var w = iframe.offsetWidth;
 	console.log(w);
+	if (w == 0) {
+	    return 0;
+	}
         iframe.style.height = 11 / 8.5 * (w - 24) + 24 + "px";
+	return 1;
 };
 
 window.addEventListener("resize", resizeIframe);
