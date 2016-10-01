@@ -1,14 +1,3 @@
-var myVariable;
-$('.item').click(function(){
-	if($('#cv').is(':visible')) {
-		myVariable = '#cv'
-	} else if ($('#about').is(':visible')) {
-		myVariable = '#about'
-	} else if ($('#contact').is(':visible')) {
-		myVariable = '#contact'
-	}
-})
-
 var hide_lists=function(cb){
 	$('#posts').fadeOut(300);
 	$('#projects').fadeOut(300);
@@ -41,8 +30,20 @@ var show_posts=function(){
 };
 
 var show_cv=function(){
-	$(myVariable).removeClass('disabled');
-	$(myVariable).fadeOut(300, function(){$('#cv').fadeIn(300)});
+
+	var last;
+	function() {
+		if($('#cv').is(':visible')) {
+			last = '#cv'
+		} else if ($('#about').is(':visible')) {
+			last = '#about'
+		} else if ($('#contact').is(':visible')) {
+			last = '#contact'
+		}
+	}
+
+	$(last).removeClass('disabled');
+	$(last).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
 };
 
