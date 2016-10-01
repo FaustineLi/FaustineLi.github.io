@@ -19,6 +19,8 @@ var show_posts=function(){
 
 var show_cv=function(){
 	$('#projects-btn').removeClass('disabled');
+	$('#about-btn').removeClass('disabled');
+	$('#contact-btn').removeClass('disabled');
 	$('#projects').fadeOut(function(){$('#posts').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
 };
