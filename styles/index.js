@@ -6,6 +6,8 @@ var hide_lists=function(cb){
 			return '#about'
 		} else if ($('#contact').is(':visible')) {
 			return '#contact'
+		} else {
+			return '#posts'
 		}
 	}
 	$(last()).removeClass('disabled');
@@ -20,6 +22,8 @@ var show_projects=function(){
 			return '#about'
 		} else if ($('#contact').is(':visible')) {
 			return '#contact'
+		} else {
+			return '#posts'
 		}
 	}
 	$(last()).removeClass('disabled');
@@ -35,6 +39,8 @@ var show_posts=function(){
 			return '#about'
 		} else if ($('#contact').is(':visible')) {
 			return '#contact'
+		} else {
+			return '#posts'
 		}
 	}
 	$(last()).removeClass('disabled');
@@ -50,6 +56,8 @@ var show_cv=function(){
 			return '#about'
 		} else if ($('#contact').is(':visible')) {
 			return '#contact'
+		} else {
+			return '#posts'
 		}
 	}
 	$(last()).removeClass('disabled');
@@ -65,6 +73,8 @@ var show_about=function(){
 			return '#about'
 		} else if ($('#contact').is(':visible')) {
 			return '#contact'
+		} else {
+			return '#posts'
 		}
 	}
 	$(last()).removeClass('disabled');
@@ -80,6 +90,8 @@ var show_contact=function(){
 			return '#about'
 		} else if ($('#contact').is(':visible')) {
 			return '#contact'
+		} else {
+			return '#posts'
 		}
 	}
 	$(last()).removeClass('disabled');
