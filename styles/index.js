@@ -67,7 +67,7 @@ var show_cv=function(){
 	$(last().btn).removeClass('disabled');
 	$(last().div).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
-        try_until_sucess(resizeIframe, 10) {
+        try_until_sucess(resizeIframe, 10);
 };
 
 var show_about=function(){
