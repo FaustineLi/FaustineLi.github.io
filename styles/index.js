@@ -67,7 +67,7 @@ var show_cv=function(){
 	$(last().btn).removeClass('disabled');
 	$(last().div).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
-	resizeIframe();
+        try_until_sucess(resizeIframe, 10) {
 };
 
 var show_about=function(){
@@ -111,11 +111,17 @@ function resizeIframe(e) {
 	var w = iframe.offsetWidth;
 	console.log(w);
 	if (w == 0) {
-	    return 0;
+	    return false;
 	}
         iframe.style.height = 11 / 8.5 * (w - 24) + 24 + "px";
-	return 1;
+	return true;
 };
+
+function try_until_sucess(func, delay) {
+        if (!resizeIframe()) {
+	    setInterval(func, delay);
+	}
+}
 
 window.addEventListener("resize", resizeIframe);
 
