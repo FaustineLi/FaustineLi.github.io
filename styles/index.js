@@ -33,9 +33,9 @@ var show_cv=function(){
 	$('#projects-btn').removeClass('disabled');
 	$('#about-btn').removeClass('disabled');
 	$('#contact-btn').removeClass('disabled');
-	$('#about').fadeOut(300).next().delay(50).fadeIn(300);
-	$('#contact').fadeOut(300).next().delay(50).fadeIn(300);
-	$('#projects').fadeOut(300).next().delay(50).fadeIn(300);
+	$('#about').fadeOut(300, function(){$('#cv').fadeIn(300)});
+	$('#contact').fadeOut(300, function(){$('#cv').fadeIn(300)});
+	$('#projects').fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
 };
 
@@ -43,8 +43,6 @@ var show_about=function(){
 	$('#projects-btn').removeClass('disabled');
 	$('#cv-btn').removeClass('disabled');
 	$('#contact-btn').removeClass('disabled');
-	$('#projects').fadeOut(300, function(){$('#about').fadeIn(300)});
-	$('#contact').fadeOut(300, function(){$('#about').fadeIn(300)});
 	$('#cv').fadeOut(300, function(){$('#about').fadeIn(300)});
 	$('#about-btn').addClass('disabled')
 };
