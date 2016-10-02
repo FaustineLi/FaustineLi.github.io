@@ -67,6 +67,7 @@ var show_cv=function(){
 	$(last().btn).removeClass('disabled');
 	$(last().div).fadeOut(300, function(){$('#cv').fadeIn(300)});
 	$('#cv-btn').addClass('disabled')
+        try_until_sucess(resizeIframe, 10);
 };
 
 var show_about=function(){
@@ -104,3 +105,22 @@ var show_contact=function(){
 	$(data.div).fadeOut(300, function(){$('#contact').fadeIn(300)});
 	$('#contact-btn').addClass('disabled')
 };
+
+function resizeIframe(e) {
+        var iframe = document.getElementById("cv_iframe");
+	var w = iframe.offsetWidth;
+	if (w == 0) {
+	    return false;
+	}
+        iframe.style.height = 11 / 8.5 * (w - 24) + 24 + "px";
+	return true;
+};
+
+function try_until_sucess(func, delay) {
+        if (!func()) {
+	    setTimeout(function(){try_until_sucess(func, delay);}, delay);
+	}
+}
+
+window.addEventListener("resize", resizeIframe);
+
