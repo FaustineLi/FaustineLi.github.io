@@ -6,6 +6,8 @@ var hide_lists=function(cb){
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
 			return {div: "#contact", btn: "#contact-btn"}
+		} else if ($('#projects').is(':visible')) {
+			return {div: "#projects", btn: "#projects-btn"}
 		} else {
 			return {div: "#posts", btn: "#posts-btn"}
 		}
@@ -41,6 +43,8 @@ var show_posts=function(){
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
 			return {div: "#contact", btn: "#contact-btn"}
+		} else if ($('#projects').is(':visible')) {
+			return {div: "#projects", btn: "#projects-btn"}
 		} else {
 			return {div: "#posts", btn: "#posts-btn"}
 		}
@@ -59,6 +63,8 @@ var show_cv=function(){
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
 			return {div: "#contact", btn: "#contact-btn"}
+		} else if ($('#projects').is(':visible')) {
+			return {div: "#projects", btn: "#projects-btn"}
 		} else {
 			return {div: "#posts", btn: "#posts-btn"}
 		}
@@ -78,6 +84,8 @@ var show_about=function(){
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
 			return {div: "#contact", btn: "#contact-btn"}
+		} else if ($('#projects').is(':visible')) {
+			return {div: "#projects", btn: "#projects-btn"}
 		} else {
 			return {div: "#posts", btn: "#posts-btn"}
 		}
@@ -96,6 +104,8 @@ var show_contact=function(){
 			return {div: "#about", btn: "#about-btn"}
 		} else if ($('#contact').is(':visible')) {
 			return {div: "#contact", btn: "#contact-btn"}
+		} else if ($('#projects').is(':visible')) {
+			return {div: "#projects", btn: "#projects-btn"}
 		} else {
 			return {div: "#posts", btn: "#posts-btn"}
 		}
