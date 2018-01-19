@@ -149,7 +149,7 @@ a{
     font-size: 23.5px;
 }
 .my-mini-heading-sub{
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #4db6ac;
 }
@@ -180,7 +180,7 @@ a{
     color: #38c1c1;
 }
 .my-text-body{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', serif;
     font-size: 13px;
     margin-top: 20px;
 }
@@ -240,7 +240,7 @@ a{
     color: #4db6ac;
 }
 .my-item{
-     font-family: 'Libre Baskerville', serif;    
+     font-family: 'Roboto', serif;    
     font-size: 18px;
     margin-bottom: 20px;
 }
