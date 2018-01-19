@@ -27,6 +27,14 @@ src:local('Material Icons'),local(MaterialIcons-Regular),url(fonts/icons.woff2) 
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(fonts/roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+
 /* latin-ext */
 @font-face {
   font-family: 'Libre Baskerville';
@@ -141,7 +149,7 @@ a{
     font-size: 23.5px;
 }
 .my-mini-heading-sub{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', serif;
     font-size: 15px;
     color: #4db6ac;
 }
