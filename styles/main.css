@@ -270,7 +270,7 @@ img{
 }
 
 #about {
-  display: none;
+  display: block;
   width:auto;
   max-width: 500px;
   margin-left: auto;
