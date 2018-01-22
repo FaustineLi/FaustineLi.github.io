@@ -1,10 +1,14 @@
+- name: Bayesian Hidden Markov Models
+  link: https://github.com/FaustineLi/bayesHMM
+  description: "Bayesian inference for HMMs from scratch"
+
 - name: Inception Dashboard
   link: https://github.com/FaustineLi/inception-dash
   description: "Image recognition dashboard with Keras and Dash"
 
 - name: Variational Autoencoders
   link: https://github.com/FaustineLi/Sta663-Project
-  description: "VAE from sratch in Python"
+  description: "VAE from scratch in Python"
 
 - name: Duke Kaggle Competition
   link: "https://github.com/FaustineLi/Sta561-Kaggle"
